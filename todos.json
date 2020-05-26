@@ -1,9 +1,9 @@
 {
-    "todos": [
-      {
-        "id": "lw-1589746585547",
-        "title": "vue is awasome",
-        "done": true
-      }
-    ]
-  }
+  "todos": [
+    {
+      "id": "lw-1589746585547",
+      "title": "vue is awasome",
+      "done": true
+    }
+  ]
+}
