@@ -1,9 +1,9 @@
 const baseUrl = 'http://localhost:3000/todos/';
 const service = {
-        async fetchTodoList () {
+    async fetchTodoList () {
         let response = await fetch(baseUrl);
         let data = await response.json();
-        console.log(data);
+        return data;
     },
 
     async addTodo (newTodo) {

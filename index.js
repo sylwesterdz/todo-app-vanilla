@@ -1,3 +1,3 @@
-import { service } from './src/service/service.js';
+import { aaa } from './src/modules/todos.js';
 
-service.fetchTodoList();
+aaa.fetchTodoList()
