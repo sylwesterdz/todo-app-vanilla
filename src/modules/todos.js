@@ -1,10 +1,10 @@
 import { service } from '../service/service.js';
 
-const todoList = document.querySelector(".todo-list");
+const todoList = document.querySelector('.todo-list');
 const addButton = document.getElementById('add-button');
 let todos;
 
-addButton.addEventListener('click', function(){
+addButton.addEventListener('click', (event) => {
     event.preventDefault();
     fetchTodos.addTodo();
 });
@@ -16,7 +16,7 @@ const fetchTodos = {
     },
 
     addTodo() {
-        const todoTitle = document.getElementById("todo").value;
+        const todoTitle = document.getElementById('todo').value;
         const newTodo = {
             title: todoTitle,
             done: false,
