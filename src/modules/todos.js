@@ -9,10 +9,8 @@ addButton.addEventListener('click', (event) => {
     addTodo();
 });
 
-
 async function fetchTodoList() {
         todos = await service.fetchTodoList();
-        //console.log(todos[0].id);
         displayTodos();
         deleteTodo();
         editTodo();
@@ -34,7 +32,7 @@ function displayTodos() {
             const deleteButton = document.createElement('button');
             const editButton = document.createElement('button');
             deleteButton.id = 'delete-button';
-            editButton.id = 'edit-button';
+            editButton.classList.add('edit-button');
             todoList.appendChild(listElement);
             listElement.textContent += todo.title;
             listElement.appendChild(deleteButton);
@@ -51,13 +49,12 @@ function deleteTodo() {
             deleteButton.addEventListener('click', () => {
                 service.deleteTodo(todos[index].id);
                 todos = service.fetchTodoList();
-                console.log(todos);
             });
         });
 }
 
 function editTodo() {
-        const editButtons = document.querySelectorAll('#edit-button');
+        const editButtons = document.querySelectorAll('.edit-button');
         const popupOverlay = document.querySelector('.overlay');
         const popupAccept = document.querySelector('.accept');
         const popupClose = document.querySelector('.close');
