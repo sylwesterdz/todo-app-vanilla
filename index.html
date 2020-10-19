@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,6 +15,21 @@
     <ul class="todo-list">
        
     </ul>
+    <div class="overlay">
+        <div class="popup">
+            <span class="close">X</span>
+            <div class="middle">
+                <span class="tekst">Edit Your ToDo</span>
+                    <div class="editbar">
+                        <input type="text" name="editbar" id="editbar" required>
+                    </div>
+            </div>
+                <div class="buttons">
+                    <button class="accept">Accept</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+        </div>
+    </div>
     <script type="module" src="index.js"></script>
 </body>
 </html>

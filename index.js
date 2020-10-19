@@ -1,3 +1,3 @@
-import { fetchTodos } from './src/modules/todos.js';
+import { fetchTodoList } from './src/modules/todos.js';
 
-fetchTodos.fetchTodoList()
+fetchTodoList()
